@@ -6,8 +6,4 @@
 int main()
 {
     std::cout << "Hello World!\n";
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 0bee4c8730d55dcf4f4690b4901137384439562f
