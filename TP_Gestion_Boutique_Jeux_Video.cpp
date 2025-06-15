@@ -4,23 +4,29 @@
 #include <iostream>
 #include "JeuVideo.h"
 #include "Console.h"
+#include "GestionProduits.h"
 
 int main()
 {
+    GestionProduits gestion;
+
     try {
-        //Test des jeux
-        JeuVideo FIFA("FIFA", "Sport", 60, 15);
-        std::cout << FIFA << std::endl;
+        JeuVideo FIFA("FIFA", "Sport", 60, 2);
+        gestion.ajouterJeu(FIFA);
 
-        //JeuVideo JediSurvivor("Jedi Survivor", "Aventure", -1, 8);
+        Console PS5("PS5", 500, 1);
+        gestion.ajouterConsole(PS5);
 
-        //Test des consoles
-        Console PS5("PS5", 500, 5);
-        std::cout << PS5 << std::endl;
+        gestion.afficherInventaireComplet();
 
-        //Console PS6("PS6", -1, 2);
+        gestion.vendreJeu("FIFA", 2);
+        gestion.vendreConsole("PS5", 1);
+
+        std::cout << "\nTotal produits vendus : " << GestionProduits::getTotalProduitsVendus() << std::endl;
+
+        gestion.afficherInventaireComplet();
     }
     catch (const ErreurArgumentInvalide& e) {
-        std::cerr << "\n\nErreur : " << e.what() << std::endl;
+        std::cerr << "Argument invalide : " << e.what() << std::endl;
     }
 }

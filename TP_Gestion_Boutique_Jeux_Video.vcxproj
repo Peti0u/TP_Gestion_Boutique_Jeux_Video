@@ -126,6 +126,7 @@
     <ClCompile Include="Console.cpp" />
     <ClCompile Include="ErreurArgumentInvalide.cpp" />
     <ClCompile Include="ErreurStockInsuffisant.cpp" />
+    <ClCompile Include="GestionProduits.cpp" />
     <ClCompile Include="JeuVideo.cpp" />
     <ClCompile Include="Produit.cpp" />
     <ClCompile Include="TP_Gestion_Boutique_Jeux_Video.cpp" />
@@ -134,6 +135,7 @@
     <ClInclude Include="Console.h" />
     <ClInclude Include="ErreurArgumentInvalide.h" />
     <ClInclude Include="ErreurStockInsuffisant.h" />
+    <ClInclude Include="GestionProduits.h" />
     <ClInclude Include="JeuVideo.h" />
     <ClInclude Include="Produit.h" />
   </ItemGroup>

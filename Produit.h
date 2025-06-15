@@ -4,7 +4,6 @@
 #include "ErreurArgumentInvalide.h"
 #include <ostream>
 
-
 class Produit {
 protected:
     std::string nomProduit;
@@ -24,6 +23,8 @@ public:
 
     virtual ~Produit();
     friend std::ostream& operator <<(std::ostream& os, const Produit& produit);
+
+
 };
 
 

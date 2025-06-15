@@ -4,8 +4,8 @@
 JeuVideo::JeuVideo(std::string p_titre, std::string p_genre, double p_prix, int p_stock) :
 	Produit(p_titre, p_prix), genre(p_genre) {
 	setStock(p_stock);
-}
-	
+}	
+
 
 std::string JeuVideo::getGenre() const { return genre; }
 int JeuVideo::getStock() const { return stock; }
