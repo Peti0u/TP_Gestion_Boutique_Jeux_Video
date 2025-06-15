@@ -11,7 +11,7 @@ void GestionProduits::ajouterConsole(const Console& console) {
 }
 
 void GestionProduits::afficherInventaireComplet() const {
-    std::cout << "\nVoici l'inventaire des jeux vidéo :";
+    std::cout << "\nVoici l'inventaire des jeux video :" << std::endl;
 
     for (int i = 0; i < jeux.size(); i++) {
         std::cout << jeux[i] << std::endl;
@@ -37,6 +37,7 @@ void GestionProduits::vendreJeu(const std::string& titreJeu, int quantite) {
             else {
                 throw ErreurStockInsuffisant(titreJeu, quantite, jeux[i].getStock());
             }
+
             return;
         }
     }
@@ -57,6 +58,7 @@ void GestionProduits::vendreConsole(const std::string& nomConsole, int quantite)
             else {
                 throw ErreurStockInsuffisant(nomConsole, quantite, consoles[i].getStock());
             }
+
             return;
         }
     }

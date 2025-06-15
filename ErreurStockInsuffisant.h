@@ -2,7 +2,7 @@
 #define STOCK_INSUFFISANT_H
 #include <iostream>
 
-class ErreurStockInsuffisant {
+class ErreurStockInsuffisant : public std::runtime_error {
 private:
 	std::string titre_produit;
 	int quantite_dispo;

@@ -10,7 +10,7 @@ int Console::getStock() const { return stock; }
 
 void Console::setStock(int nouveauStock) {
     if (nouveauStock < 0) {
-        throw ErreurArgumentInvalide("Le stock de la console ne peut pas être negatif");
+        throw ErreurArgumentInvalide("Le stock ne peut pas etre negatif");
     }
     else {
         stock = nouveauStock;
