@@ -123,12 +123,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Console.cpp" />
     <ClCompile Include="ErreurArgumentInvalide.cpp" />
     <ClCompile Include="ErreurStockInsuffisant.cpp" />
     <ClCompile Include="JeuVideo.cpp" />
     <ClCompile Include="TP_Gestion_Boutique_Jeux_Video.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Console.h" />
     <ClInclude Include="ErreurArgumentInvalide.h" />
     <ClInclude Include="ErreurStockInsuffisant.h" />
     <ClInclude Include="JeuVideo.h" />

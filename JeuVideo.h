@@ -22,9 +22,7 @@ public:
 	void setStock(int p_stock);
 
 	void afficherInfos() const;
-
-
 };
 
 
-#endif // !STOCK_INSUFFISANT_H
+#endif

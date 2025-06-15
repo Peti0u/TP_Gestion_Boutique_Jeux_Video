@@ -8,4 +8,4 @@ public:
 };
 
 
-#endif // !STOCK_INSUFFISANT_H
+#endif 
