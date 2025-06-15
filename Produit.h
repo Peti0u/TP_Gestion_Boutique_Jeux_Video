@@ -2,6 +2,7 @@
 #define PRODUIT_H
 #include <iostream>
 #include "ErreurArgumentInvalide.h"
+#include <ostream>
 
 
 class Produit {
@@ -22,6 +23,8 @@ public:
     virtual void setStock(int nouveauStock) = 0;
 
     virtual ~Produit();
+    friend std::ostream& operator <<(std::ostream& os, const Produit& produit);
 };
+
 
 #endif

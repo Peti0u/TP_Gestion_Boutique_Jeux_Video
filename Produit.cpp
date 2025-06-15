@@ -19,3 +19,9 @@ void Produit::setPrixBase(double p_prixBase) {
 }
 
 Produit::~Produit() {}
+
+
+std::ostream& operator<<(std::ostream& os, const Produit& produit) {
+	produit.afficherDetailsProduit();
+	return os;
+}

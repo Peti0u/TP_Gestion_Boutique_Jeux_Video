@@ -4,7 +4,7 @@
 #include "ErreurArgumentInvalide.h" //Pour avoir l'exception
 #include "Produit.h"
 
-class JeuVideo : Produit {
+class JeuVideo : public Produit {
 private:
 	std::string genre;
 	int stock;
