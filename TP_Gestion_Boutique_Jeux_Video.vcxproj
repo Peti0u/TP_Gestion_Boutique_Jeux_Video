@@ -127,6 +127,7 @@
     <ClCompile Include="ErreurArgumentInvalide.cpp" />
     <ClCompile Include="ErreurStockInsuffisant.cpp" />
     <ClCompile Include="JeuVideo.cpp" />
+    <ClCompile Include="Produit.cpp" />
     <ClCompile Include="TP_Gestion_Boutique_Jeux_Video.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -134,6 +135,7 @@
     <ClInclude Include="ErreurArgumentInvalide.h" />
     <ClInclude Include="ErreurStockInsuffisant.h" />
     <ClInclude Include="JeuVideo.h" />
+    <ClInclude Include="Produit.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

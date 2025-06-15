@@ -2,26 +2,22 @@
 #define JEU_VIDEO_H
 #include <iostream>
 #include "ErreurArgumentInvalide.h" //Pour avoir l'exception
+#include "Produit.h"
 
-class JeuVideo {
+class JeuVideo : Produit {
 private:
-	std::string titre;
 	std::string genre;
-	double prix;
 	int stock;
 
 public:
-	JeuVideo(std::string p_tire, std::string p_genre, double p_prix, int p_stock);
+	JeuVideo(std::string p_titre, std::string p_genre, double p_prix, int p_stock);
 
-	std::string getTitre() const;
 	std::string getGenre() const;
-	double getPrix() const;
 	int getStock() const;
 
-	void setPrix(double p_prix);
-	void setStock(int p_stock);
-
-	void afficherInfos() const;
+	double calculerPrixTTC() const override;
+	void afficherDetailsProduit() const override;
+	void setStock(int nouveauStock) override;
 };
 
 
