@@ -2,22 +2,11 @@
 #include <iostream>
 
 Console::Console(std::string p_nomConsole, double p_prix, int p_stock) :
-    nomConsole(p_nomConsole) {
-    setPrix(p_prix);
-    setStock(p_stock);}
-
-std::string Console::getNomConsole() const { return nomConsole; }
-double Console::getPrix() const { return prix; }
-int Console::getStock() const { return stock; }
-
-void Console::setPrix(double nouveauPrix) {
-    if (nouveauPrix < 0) {
-        throw ErreurArgumentInvalide("Le prix de la console ne peut pas etre negatif");
-    }
-    else {
-        prix = nouveauPrix;
-    }
+    Produit(p_nomConsole, p_prix) {
+    setStock(p_stock);
 }
+
+int Console::getStock() const { return stock; }
 
 void Console::setStock(int nouveauStock) {
     if (nouveauStock < 0) {
@@ -28,8 +17,12 @@ void Console::setStock(int nouveauStock) {
     }
 }
 
-void Console::afficherInfos() const {
-    std::cout << "Console : " << nomConsole << std::endl;
-    std::cout << "Prix    : " << prix << " euros" << std::endl;
+double Console::calculerPrixTTC() const {
+    return prixBase * 1.20;
+}
+
+void Console::afficherDetailsProduit() const {
+    std::cout << "Console : " << nomProduit << std::endl;
+    std::cout << "Prix    : " << calculerPrixTTC() << " euros" << std::endl;
     std::cout << "Stock   : " << stock << std::endl;
 }

@@ -11,7 +11,7 @@ double Produit::getPrixBase() const { return prixBase; }
 
 void Produit::setPrixBase(double p_prixBase) {
 	if (p_prixBase < 0) {
-		throw ErreurArgumentInvalide("Le stock ne peut pas etre negatif");
+		throw ErreurArgumentInvalide("Le prix ne peut pas etre negatif");
 	}
 	else {
 		prixBase = p_prixBase;
